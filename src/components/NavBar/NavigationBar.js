@@ -35,7 +35,7 @@ function NavigationBar() {
       >
         <NavItem>
           <Link to="/" className="text-white">
-            JSOM
+            Vehicle Violations
           </Link>
         </NavItem>
         {/* <NavLink className=" text-white" to="/">
@@ -52,48 +52,7 @@ function NavigationBar() {
           }}
         >
           <Nav className="ml-auto" navbar>
-            <NavItem>
-              <Link to="/" onClick={toggle}>
-                <p
-                  className={`m-2 ${
-                    !!!pathName.split('/')[1] ? 'text-white' : 'text-secondary '
-                  }`}
-                >
-                  {' '}
-                  Authors
-                </p>
-              </Link>
-            </NavItem>
-
-            <NavItem>
-              <Link to="/MostLikedPost" onClick={toggle}>
-                <p
-                  className={`m-2 ${
-                    pathName.split('/')[1] === 'MostLikedPost'
-                      ? 'text-white'
-                      : 'text-secondary'
-                  }`}
-                >
-                  {' '}
-                  MostLikedPost
-                </p>
-              </Link>
-            </NavItem>
-
-            <NavItem>
-              <Link to="/MostCommentPost" onClick={toggle}>
-                <p
-                  className={` m-2 ${
-                    pathName.split('/')[1] === 'MostCommentPost'
-                      ? 'text-white'
-                      : 'text-secondary'
-                  }`}
-                >
-                  {' '}
-                  MostCommentPost
-                </p>
-              </Link>
-            </NavItem>
+            
           </Nav>
         </Collapse>
       </Navbar>
